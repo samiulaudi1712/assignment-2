@@ -148,9 +148,71 @@ body{
     text-align: left;
 }
 
+/* change habits section */
+.habit-section-title{
+    margin-top: 100px;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.change-habit{
+    flex-direction: column;
+}
+.change-habit-paragraph{
+    opacity: 50%;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 58px;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.change-habit-img{
+    height: 180px;
+    width: 180px;
+    border: 4px solid rgba(60, 60, 60, 1);
+    border-radius: 50%;
+}
+.change-habit-images{
+    gap: 60px;
+}
+.habit-container{
+    flex-direction: column;
+    text-align: center;
+}
+#img1{
+    background-image: url('../images/image\ 3.png');
+    background-position: center;
+    background-size: cover;
+}
+#img2{
+    background-image: url('../images/image\ 2.png');
+    background-position: center;
+    background-size: cover;
+}
+#img3{
+    background-image: url('../images/image\ 4.png');
+    background-position: center;
+    background-size: cover;
+}
+#img4{
+    background-image: url('../images/image\ 5.png');
+    background-position: center;
+    background-size: cover;
+}
+.habit-name{
+    margin-top: 30px;
+    margin-bottom: 6px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.habit-details{
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 
 /* responsiveness for small devices */
 @media screen and (max-width: 576px) {
+    /* navbar section */
     .navbar{
         justify-content: space-between;
         margin-left: 20px;
@@ -168,6 +230,7 @@ body{
     header{
         background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.1) 20%);
     }
+    /* banner section */
     .banner{
         flex-direction: column;
     }
@@ -214,4 +277,25 @@ body{
         left: 235px;
         top: 550px;
     }
+      /* change habit section  */
+    .change-habit-images{
+        display: flex;
+        flex-direction: column;
+    }
+    .change-habits{
+        margin-top: 270px;
+    }
+    .habit-section-title{
+        font-size: 32px;
+    }
+    .change-habit-paragraph{
+        font-size: 14px;
+    }
+    .habit-name{
+        font-size: 18px;
+    }
+    .habit-details{
+        font-size: 14px;
+    }
+
     }
