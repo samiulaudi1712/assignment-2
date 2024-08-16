@@ -14,18 +14,18 @@ body{
     justify-content: center;
     align-items: center;
 }
-.color-white{
+.white{
     color: white;
 }
 .common-red{
     color: rgba(230, 83, 60, 1);
 }
-.common-red-bg{
+.common-red-background{
     background-color: rgba(230, 83, 60, 1);
 }
-/* header styles */
+/* header section */
 
-/* navbar styles */
+/* navbar section */
 .navbar-title{
     font-size: 2.25rem;
     font-weight: bold;
@@ -60,13 +60,96 @@ body{
 #bars{
     display: none;
 }
+/* Banner Section */
+.banner{
+    justify-content: space-around;
+}
+.banner-title{
+    font-size: 4.875rem;
+}
+#shape{
+    font-family: 'Miama', sans-serif;
+    font-weight: 400;
+    font-size: 4.875;
+}
+.banner-paragraph{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+.banner-btn-container{
+    width: 100%;
+    height: 3.625rem;
+}
+.join{
+    border-radius: 42px;
+    border: none;
+    padding: 16px 40px;
+    margin-right: 10px;
+    width: 14rem;
+    height: 3.5625rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.download{
+    background-color: transparent;
+    border: 1.5px solid white;
+    border-radius: 42px;
+    padding: 16px 40px;
+    width: 14rem;
+    height: 3.5625rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.gray-card-1{
+    width: 193px;
+    height: 98px;
+    background-color: rgba(48, 48, 48, 0.54);
+    border: 0.2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+}
+.workout-card{
+    left: 1200px;
+    bottom: 400px;
+    flex-direction: column;
+}
+.banner-img{
+    z-index: 0;
+}
+.fwv{
+    text-align: left;
+}
+.fwv > h6, .vid-tutorial-text > h6{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.fwv > p, .vid-tutorial-text > p{
+    font-size: 0.8125rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.video-tutorial{
+    bottom: 50px;
+    left: 730px;
+    
+}
+.red-circle{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.vid-tutorial-text{
+    flex-direction: column;
+    text-align: left;
+}
 
 
-
-
-
-
-/* /* responsiveness for small devices */
+/* responsiveness for small devices */
 @media screen and (max-width: 576px) {
     .navbar{
         justify-content: space-between;
@@ -82,4 +165,53 @@ body{
     #bars{
         display: inline;
     }
-}
+    header{
+        background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.1) 20%);
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-btn-container{
+        display: flex;
+        justify-content: center;
+    }
+    .join, .download{
+        height: 54px;
+        width: 199px;
+        font-size: 18px;
+        padding: 16px 30px;
+    }
+    .banner-title{
+        font-size: 36px;
+    }
+    .banner-text{
+        margin: 20px;
+    }
+    .banner-paragraph{
+        font-size: 16px;
+        width: 274px;
+        height: 96px;
+    }
+    .gray-card-1{
+        width: 155.74px;
+        height: 72.58px;
+    }
+    .fwv > h6, .vid-tutorial-text > h6{
+        font-size: 19.14px;
+    }
+    .fwv > p, .vid-tutorial-text > p{
+        font-size: 13.1px;
+    }
+    .red-circle{
+        height: 30.24px;
+        width: 30.24px;
+    } 
+    .video-tutorial{
+        left: 32px;
+        top: 750px;
+    }  
+    .workout-card{
+        left: 235px;
+        top: 550px;
+    }
+    }
