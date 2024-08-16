@@ -209,6 +209,47 @@ body{
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* extra miles section */
+.extra-mile{
+    height: 371px;
+    width: 1060px;
+    background-color: rgba(34, 34, 34, 1);
+    margin: 100px auto;
+    border-radius: 20px;
+}
+.mile{
+    flex-direction: column;
+    margin-right: 145px;
+}
+.mile-paragraph{
+    opacity: 50%;
+    font-size: 0.875rem;
+    margin-bottom: 34px;
+    margin-top: 14px;
+}
+.mile-btn{
+    border-radius: 42px;
+    border: none;
+    width: 224px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    height: 54px;
+    padding: 16px 40px;
+}
+.run-img{
+    background-image: url('../images/run.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 312px;
+    width: 366px;
+    border-radius: 30px;
+    margin-left: 165px;
+}
+.mile-title{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
 
 /* responsiveness for small devices */
 @media screen and (max-width: 576px) {
@@ -297,5 +338,32 @@ body{
     .habit-details{
         font-size: 14px;
     }
+
+    /* extra miles section */
+    .extra-mile{
+        flex-direction: column;
+        width: 353px;
+        height: 531px;
+        justify-content: space-around;
+        margin-bottom: 40px;
+    }
+    .run-img{
+        width: 287px;
+        height: 170px;
+        margin: 0px;
+    }
+    .extra-miles-title{
+        font-size: 32px;
+    }
+    .mile{
+        margin: 0px;
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    .mile-btn{
+        width: 284px;
+        height: 54px;
+    }
+
 
     }
