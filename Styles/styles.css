@@ -23,6 +23,9 @@ body{
 .common-red-background{
     background-color: rgba(230, 83, 60, 1);
 }
+.text-align{
+    text-align: left;
+}
 /* header section */
 
 /* navbar section */
@@ -250,6 +253,200 @@ body{
     font-weight: 900;
 }
 
+/* unique section */
+.unique-section{
+    height: 500px;
+    width: 1000px;
+    margin: 0px auto;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/unique-image.webp');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    flex-direction: column;
+}
+.unique-title{
+    font-size: 4rem;
+    opacity: 90%;
+    font-weight: 700;
+}
+.unique-paragraph{
+    opacity: 90%;
+    font-size: 0.975rem;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+.unique-btn{
+    width: 374px;
+    color: orangered;
+}
+#arrow{
+    margin-left: 30px;
+}
+
+/* BMI calculator section */
+
+.bmi-calculator > h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.bmi-calculator{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 88px;
+    margin-top: 88px;
+}
+.bmi-heading > p{
+    opacity: 50%;
+    font-size: 0.875rem;
+    margin-top: 14px;
+}
+.main-calculator-container{
+    background-color: rgba(34, 34, 34, 1);
+    width: 100%;
+    height: 500px;
+    margin-top: 88px;
+    justify-content: space-around;
+}
+td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    font-size: 0.875rem;
+    opacity: 50%;
+}
+th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    font-size: 1rem;
+}
+table{
+    border-collapse: collapse;
+}
+.main-calculator-paragraph{
+    opacity: 50%;
+    font-size: 0.875rem;
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+.calculator-inputs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 577px;
+    height: 168px;
+    gap: 12px;
+    margin-bottom: 34px;
+    margin-top: 30px;
+}
+.activity-factor{
+    grid-column: span 2;
+}
+.calculator-input::placeholder{
+    color: white;
+    padding-left: 20px;
+}
+.calculator-input{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+    border: none;
+}
+option{
+    color: black;
+}
+select{
+    padding-left: 20px;
+}
+.chart-title{
+    margin-bottom: 52px;
+}
+.main-calculator-title{
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+.calculator-input::placeholder{
+    opacity: 60%;
+}
+.gender, .activity-factor{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* team section */
+.team-title{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.about-team{
+    font-size: 0.875rem;
+    opacity: 50%;
+    margin-top: 14px;
+    margin-bottom: 58px;
+}
+.team{
+    text-align: center;
+    flex-direction: column;
+    
+}
+.team-image{
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1060px;
+    height: 604px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 20px;
+    gap: 20px;
+}
+.img1{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/trainer1.png');
+    background-size: cover;
+    background-position: center; 
+}
+.img2{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/trainer2.png');
+    background-size: cover;
+    background-position: center;
+}
+.img3{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/trainer3.png');
+    background-size: cover;
+    background-position: center;
+}
+.img4{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/trainer4.png');
+    background-size: cover;
+    background-position: center;
+}
+.img5{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/trainer5.png');
+    background-size: cover;
+    background-position: center;
+}
+.img6{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/trainer6.png');
+    background-size: cover;
+    background-position: center;
+}
+.team-img-text{
+    padding: 10px;
+}
+
+.trainer-name{
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.trainer{
+    opacity: 50%;
+    font-size: 0.875rem;
+}
+
 
 /* responsiveness for small devices */
 @media screen and (max-width: 576px) {
@@ -363,6 +560,94 @@ body{
     .mile-btn{
         width: 284px;
         height: 54px;
+    }
+
+    
+    /*unique section */
+    .unique-section{
+        height: 350px;
+        width: 90%;
+        margin-bottom: 1.875rem;
+    }
+    .unique-title{
+        font-size: 34px;
+    }
+    .unique-btn{
+        width: 314px;
+        font-size: 14px;
+    }
+    #arrow{
+        margin-left: 10px;
+    }
+
+     /* BMI calculator section */
+     .bmi-calculator{
+        margin-top: 1.875rem;
+    }
+    .bmi-heading > h1{
+        font-size: 2rem;
+    }
+    .bmi-heading > p{
+        font-size: 0.875rem;
+    }
+    .bmi-heading{
+        margin-left: 20px;
+    }
+    .main-calculator-container{
+        flex-direction: column;
+        height: 822px;
+        margin-top: 2rem;
+    }
+    .calculator-inputs{
+        width: 22.0625rem;
+        height: 10.5rem;
+        gap: 0.75rem;
+    }
+    .bmi-chart{
+        margin-right: 20px;
+        margin-bottom: 42px;
+    }
+    .main-calculator{
+        margin-left: 30px;
+    }
+    .main-calculator-title{
+        font-size: 1rem;
+    }
+    .main-calculator-para{
+        font-size: 0.875rem;
+    }
+    .chart-title{
+        font-size: 1rem;
+        margin-bottom: 1.4375rem;
+    }
+    .bmi-chart{
+        margin-top: 2.125rem;
+    }
+    .bmi-btn{
+        margin-bottom: 2.6875rem;
+    }
+
+    /* team section */
+    .team{
+        margin-top: 4.125rem;
+    }
+    .team-title{
+        font-size: 2rem;
+    }
+    .about-team{
+        font-size: 0.875rem;
+        margin-bottom: 2.3125rem;
+    }
+    .team-img-container{
+        width: 85%;
+        height: 74.25rem;
+        grid-template-columns: repeat(1, 1fr) 
+    }
+    .team-image{
+        height: 272px;
+    }
+    .img1, .img4{
+        display: none;
     }
 
 
